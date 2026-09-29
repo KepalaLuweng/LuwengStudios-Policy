@@ -38,6 +38,6 @@ Sesuai dengan standar GDPR dan Undang-Undang Perlindungan Data Pribadi (UU PDP I
 ### 5. Hubungi Kami
 Untuk pertanyaan hukum, klarifikasi privasi, atau dukungan teknis resmi:
 * **Pengembang Utama:** Darmawan Aditya (KepalaLuweng)
-* **Organisasi:** Luweng Studios Engineering
+* **Organisasi:** LuwengGroup
 * **Telegram Dukungan Resmi:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
 * **Channel Pembaruan:** [t.me/luwengtechsupport](https://t.me/luwengtechsupport)
