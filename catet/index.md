@@ -1,44 +1,43 @@
-# Kebijakan Privasi (Privacy Policy) - CATET
+# Kebijakan Privasi (Privacy Policy) — CATET
 
-**Terakhir Diperbarui: 22 September 2026**
+**Terakhir Diperbarui: September 2026**
 
-Luweng Studios ("Kami") berkomitmen penuh untuk melindungi dan menghormati privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana aplikasi CATET mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan layanan kami.
+Luweng Studios ("Kami") berkomitmen penuh untuk melindungi dan menghormati hak privasi Anda. Dokumen Kebijakan Privasi ini menerangkan standar tata kelola dan perlindungan informasi pada aplikasi **CATET: Financial & Mobility Intelligence System**.
 
-## 1. Informasi yang Kami Kumpulkan
+---
 
-Aplikasi CATET dirancang untuk menghargai privasi pengguna. Kami hanya mengumpulkan informasi yang sangat esensial agar fitur aplikasi dapat berjalan dengan baik:
+### 1. Prinsip Dasar: Offline-First & Zero-Knowledge Architecture
+Aplikasi CATET dibangun dengan prinsip kemandirian data mutlak (*Offline-First*). Seluruh data finansial, pembukuan kas UMKM, riwayat order, catatan servis kendaraan, dan target tabungan Anda disimpan secara lokal pada perangkat Anda dalam basis data internal terenkripsi. 
 
-*   **Data Autentikasi (Google Sign-In):** Jika Anda memilih untuk masuk menggunakan akun Google, sistem kami (melalui Firebase Auth) akan menerima informasi profil publik dasar Anda seperti Nama, Alamat Email, dan Foto Profil. Kami tidak memiliki akses ke kata sandi Anda atau data Google lainnya.
-*   **Data Lokasi (GPS):** Aplikasi meminta izin akses lokasi (*Coarse/Fine Location*) secara spesifik untuk menjalankan fitur **Radar BBM**. Data lokasi ini murni digunakan untuk mendeteksi wilayah dan mencari SPBU terdekat di sekitar Anda.
-*   **Data Finansial & Operasional (Penyimpanan Lokal):** Aplikasi CATET mengusung filosofi *offline-first*. Seluruh data yang Anda masukkan, seperti catatan order harian, pemasukan UMKM, pengeluaran kas, dan target tabungan, disimpan secara lokal di dalam basis data (SQLite/Room) pada memori internal HP Anda. 
+Kami **tidak pernah mengunggah, menyalin, menganalisis, ataupun menjual** catatan finansial maupun riwayat perjalanan Anda ke server pusat kami atau pihak ketiga mana pun.
 
-## 2. Bagaimana Kami Menggunakan Informasi Anda
+---
 
-*   **Menjalankan Fitur Aplikasi:** Data profil digunakan untuk mempersonalisasi *dashboard* (menampilkan nama dan foto Anda). Data lokasi digunakan secara *real-time* untuk memberikan estimasi jarak dan ketersediaan BBM di wilayah Anda.
-*   **Data Tidak Disimpan di Server Kami:** Kami **tidak** mengumpulkan, menyalin, membaca, atau mengirimkan data keuangan dan catatan operasional Anda ke server pusat kami. Data lokasi GPS Anda juga langsung diproses dan dibuang (*discarded*), tidak pernah disimpan atau dilacak riwayatnya.
+### 2. Informasi yang Diproses & Izin Perangkat
+Kami hanya meminta izin sistem yang secara mutlak dibutuhkan untuk fungsi aplikasi yang diaktifkan secara sadar oleh pengguna:
 
-## 3. Layanan Pihak Ketiga
+* **Autentikasi Pengguna (Google Sign-In via Firebase Auth):** Hanya menerima identitas profil publik dasar (Nama Lengkap, Email, dan Foto Profil) guna mengamankan kepemilikan akun. Kami tidak memiliki akses terhadap kata sandi Anda.
+* **Izin Lokasi Presisi (GPS Fine & Coarse Location):** Digunakan untuk fitur **Radar BBM** dalam menghitung jarak ke SPBU terdekat, serta **Mode Mengemudi** untuk kalkulasi speedometer dan akumulasi jarak tempuh harian. Koordinat GPS diproses di memori perangkat dan tidak disimpan sebagai riwayat pelacakan di server.
+* **Layanan Latar Belakang (Foreground Service):** Berjalan saat Anda menyalakan *Mode Mengemudi* atau *Widget Speedometer Mengambang* agar pencatatan jarak tempuh dan konsumsi BBM tetap akurat meskipun layar dimatikan atau saat membuka aplikasi navigasi lain.
+* **Notifikasi Berkala (POST_NOTIFICATIONS):** Digunakan untuk menampilkan status mengemudi aktif serta *Pengingat Servis Berkala* (ganti oli mesin, oli gardan, CVT, rantai) yang dihitung murni secara lokal berdasarkan Odometer kendaraan Anda.
 
-Untuk memastikan fungsionalitas aplikasi, kami menggunakan layanan pihak ketiga yang beroperasi di bawah kebijakan privasi mereka masing-masing. Layanan yang tertanam dalam aplikasi ini meliputi:
-*   **Google Play Services:** Diperlukan untuk operasional sistem Android dasar dan deteksi lokasi.
-*   **Firebase Authentication:** Digunakan untuk memfasilitasi sistem Login (Single Sign-On) yang aman.
+---
 
-## 4. Keamanan & Kendali Data Anda
+### 3. Keamanan File Cadangan (.CTT)
+CATET menyediakan fitur pencadangan mandiri berformat `.ctt` dengan enkripsi tingkat lanjut (*client-side encryption*). File cadangan ini sepenuhnya menjadi hak milik Anda dan dapat disimpan secara aman di memori lokal, dikirim melalui media pribadi, atau dicadangkan ke Google Drive milik akun Anda sendiri.
 
-Anda memiliki kendali penuh atas data Anda sendiri. 
-*   **Penghapusan Data Lokal:** Anda dapat menghapus seluruh riwayat keuangan dan pengaturan profil kapan saja dengan menekan tombol "Hapus Semua Data" di menu Pengaturan aplikasi, atau melalui fitur *Clear Data* di pengaturan sistem Android.
-*   **Pencabutan Akses:** Anda dapat mencabut akses lokasi kapan saja melalui pengaturan perizinan aplikasi di HP Anda. Anda juga dapat mencabut tautan akun Google Anda dari aplikasi melalui pengaturan Keamanan Akun Google.
+---
 
-## 5. Tanpa Pelacak Pihak Ketiga (Zero Tracking)
+### 4. Kepatuhan Standar Global & UU PDP
+Sesuai dengan standar GDPR dan Undang-Undang Perlindungan Data Pribadi (UU PDP Indonesia), Anda memiliki hak mutlak untuk:
+* Mencabut izin lokasi, notifikasi, dan overlay kapan saja melalui Pengaturan Sistem Android.
+* Menghapus seluruh data lokal dan profil secara permanen melalui tombol *Hapus Semua Data* di aplikasi.
 
-Aplikasi CATET didesain untuk menjadi alat bantu produktivitas yang bersih. Kami tidak menggunakan SDK jaringan periklanan (*Ad Networks*) dan tidak menanamkan pelacak perilaku pengguna (*Behavioral Trackers*). Kami tidak menjual data pengguna kepada pihak mana pun untuk keperluan pemasaran.
+---
 
-## 6. Perubahan Kebijakan Privasi
-
-Luweng Studios berhak untuk memperbarui Kebijakan Privasi ini dari waktu ke waktu (misalnya jika ada penambahan fitur baru). Setiap perubahan akan kami unggah di halaman ini dengan mengubah tanggal "Terakhir Diperbarui" di bagian atas halaman. 
-
-## 7. Hubungi Kami
-
-Jika Anda memiliki pertanyaan, saran, atau kendala terkait Kebijakan Privasi ini maupun pengelolaan data di aplikasi CATET, Anda dapat langsung menghubungi pengembang melalui:
-*   **Telegram Resmi:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
-*   **Pengembang Utama:** Darmawan Aditya (KepalaLuweng)
+### 5. Hubungi Kami
+Untuk pertanyaan hukum, klarifikasi privasi, atau dukungan teknis resmi:
+* **Pengembang Utama:** Darmawan Aditya (KepalaLuweng)
+* **Organisasi:** Luweng Studios Engineering
+* **Telegram Dukungan Resmi:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
+* **Channel Pembaruan:** [t.me/luwengtechsupport](https://t.me/luwengtechsupport)

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi (Privacy Policy) — CATET | Luweng Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0f19;
+            --bg-card: #111827;
+            --bg-card-subtle: #1e293b;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(16, 185, 129, 0.3);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-emerald: #10b981;
+            --accent-cyan: #38bdf8;
+            --accent-blue: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 32px 16px 80px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid var(--border-highlight);
+            color: var(--accent-emerald);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .header-card {
+            background: linear-gradient(145deg, #131d31, #0f172a);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 36px 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ffffff 60%, var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            margin-top: 14px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+        }
+
+        .meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--accent-emerald);
+        }
+
+        .policy-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 26px;
+            margin-bottom: 20px;
+            transition: border-color 0.2s ease;
+        }
+
+        .policy-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent-cyan);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 14.5px;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--accent-cyan);
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        li strong {
+            color: #f1f5f9;
+        }
+
+        .highlight-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 3px solid var(--accent-emerald);
+            border-radius: 0 10px 10px 0;
+            padding: 14px 18px;
+            margin: 16px 0;
+            font-size: 13.5px;
+            color: #d1fae5;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px 60px 12px;
+            }
+            .header-card {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .policy-card {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- BRAND BADGE -->
+        <div class="brand-badge">
+            <span class="meta-dot"></span> Luweng Studios Global Privacy Standard
+        </div>
+
+        <!-- HEADER HERO -->
+        <div class="header-card">
+            <h1>Kebijakan Privasi (Privacy Policy)</h1>
+            <p style="font-size: 15px; color: #94a3b8;">
+                Komitmen perlindungan data dan privasi pengguna aplikasi <strong>CATET: Financial & Mobility Intelligence</strong>.
+            </p>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <span>Aplikasi:</span> <strong style="color: #f8fafc;">CATET v1.0.0</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Pengembang:</span> <strong style="color: #f8fafc;">Luweng Studios</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Status:</span> <strong style="color: #10b981;">Aktif & Berlaku Global</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Diperbarui:</span> <strong style="color: #cbd5e1;">September 2026</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 1 -->
+        <div class="policy-card">
+            <h2><span class="section-num">1</span> Prinsip Privasi & Arsitektur Offline-First</h2>
+            <p>
+                Luweng Studios menghormati hak privasi Anda sepenuhnya. CATET dibangun dengan filosofi dasar <strong>Offline-First & Zero-Knowledge Architecture</strong>. Seluruh data keuangan, transaksi kas, target tabungan, dan catatan log operasional Anda disimpan secara aman pada memori internal perangkat lokal Anda (SQLite / Room Database), dan <strong>TIDAK PERNAH</strong> dikirimkan ke server kami atau pihak mana pun.
+            </p>
+            <div class="highlight-box">
+                <strong>Jaminan Bebas Komersialisasi:</strong> Kami tidak pernah menjual, menyewakan, atau menukar data pribadi, data lokasi, maupun catatan finansial Anda kepada pihak ketiga, broker data, atau biro periklanan mana pun.
+            </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="policy-card">
+            <h2><span class="section-num">2</span> Data yang Dikumpulkan & Tujuan Penggunaannya</h2>
+            <p>Kami hanya mengakses data yang mutlak diperlukan untuk mengoperasikan fungsi utilitas yang diminta secara sadar oleh pengguna:</p>
+            <ul>
+                <li>
+                    <strong>Autentikasi (Google Sign-In via Firebase Auth):</strong> Digunakan semata-mata untuk mengamankan identitas kepemilikan akun. Kami hanya menerima identitas profil publik dasar seperti Nama Lengkap, Alamat Email terdaftar, dan URL Foto Profil. Kami tidak dapat dan tidak pernah memiliki akses ke kata sandi Anda.
+                </li>
+                <li>
+                    <strong>Izin Lokasi Presisi (GPS Coarse & Fine Location):</strong> Digunakan secara langsung saat Anda membuka fitur <em>Radar BBM</em> untuk menghitung jarak ke stasiun SPBU resmi terdekat, serta pada fitur <em>Mode Mengemudi</em> untuk kalkulasi speedometer dan akumulasi jarak perjalanan (KM). Koordinat GPS diproses secara matematis di perangkat Anda dan langsung dibuang tanpa disimpan ke server cloud.
+                </li>
+                <li>
+                    <strong>Layanan Latar Belakang (Foreground Service):</strong> Saat Anda mengaktifkan <em>Mode Mengemudi</em> atau <em>Widget Speedometer Mengambang</em>, sistem menjalankan Foreground Service dengan notifikasi persisten agar aplikasi dapat terus mencatat jarak tempuh secara akurat saat layar redup atau saat Anda menggunakan aplikasi navigasi lain. Layanan ini sepenuhnya berada di bawah kendali Anda dan dapat dimatikan kapan saja.
+                </li>
+                <li>
+                    <strong>Izin Notifikasi (Android 13+ POST_NOTIFICATIONS):</strong> Digunakan untuk menampilkan indikator berkendara aktif serta menyampaikan <em>Pengingat Servis Berkala</em> (seperti ganti oli mesin, oli gardan, atau servis rantai/CVT) berdasarkan ambang batas Odometer. Evaluasi servis dilakukan 100% di perangkat Anda tanpa pelaporan ke server luar.
+                </li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="policy-card">
+            <h2><span class="section-num">3</span> Keamanan Cadangan Data (Backup & Encryption)</h2>
+            <p>
+                CATET menyediakan fitur pencadangan data independen:
+            </p>
+            <ul>
+                <li>
+                    <strong>Format Cadangan CTT Terenkripsi:</strong> File cadangan (.ctt) dienkripsi menggunakan algoritma standar industri dengan salt unik perangkat Anda. File ini sepenuhnya berada dalam kepemilikan Anda untuk disimpan di memori HP atau dibagikan ke penyimpanan pribadi Anda.
+                </li>
+                <li>
+                    <strong>Sinkronisasi Google Drive Opsional:</strong> Jika Anda mengaktifkan fitur pencadangan cloud, data disimpan langsung di Google Drive milik akun Anda sendiri. Luweng Studios tidak memiliki perantara server dan tidak memiliki akses terhadap file cadangan Anda.
+                </li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="policy-card">
+            <h2><span class="section-num">4</span> Layanan Pihak Ketiga</h2>
+            <p>Aplikasi CATET menggunakan dependensi infrastruktur resmi Google untuk memastikan kestabilan dan keamanan aplikasi:</p>
+            <ul>
+                <li><strong>Google Play Services:</strong> Untuk penyediaan Fused Location Provider berakurasi tinggi.</li>
+                <li><strong>Google Firebase Authentication:</strong> Untuk otentikasi login aman Single Sign-On (SSO).</li>
+            </ul>
+            <p>Kedua layanan tersebut tunduk pada kebijakan privasi resmi Google LLC (<a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent-cyan);">Google Privacy Policy</a>).</p>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div class="policy-card">
+            <h2><span class="section-num">5</span> Hak Pengguna & Penghapusan Data (Right to Erasure)</h2>
+            <p>
+                Sesuai dengan standar perlindungan data global (GDPR) dan Undang-Undang Perlindungan Data Pribadi (UU PDP Indonesia), Anda memiliki kendali penuh:
+            </p>
+            <ul>
+                <li><strong>Penghapusan Seketika:</strong> Anda dapat menghapus seluruh catatan transaksi, profil, dan histori log melalui tombol <em>Hapus Semua Data</em> di dalam aplikasi, atau melalui menu <em>Hapus Penyimpanan / Clear Storage</em> di Pengaturan HP Anda.</li>
+                <li><strong>Pencabutan Izin:</strong> Izin lokasi, notifikasi, dan overlay dapat dicabut kapan saja melalui menu Setelan Aplikasi di perangkat Android Anda.</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 6 -->
+        <div class="policy-card">
+            <h2><span class="section-num">6</span> Hubungi Kami & Dukungan Resmi</h2>
+            <p>
+                Apabila Anda memiliki pertanyaan, klarifikasi legal, atau masukan mengenai Kebijakan Privasi ini, silakan menghubungi tim pengembang resmi kami:
+            </p>
+            <ul>
+                <li><strong>Pengembang Utama:</strong> Darmawan Aditya (KepalaLuweng)</li>
+                <li><strong>Organisasi:</strong> Luweng Studios Engineering</li>
+                <li><strong>Dukungan Telegram Resmi:</strong> <a href="https://t.me/luwengtechofficial" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechofficial</a></li>
+                <li><strong>Channel Informasi:</strong> <a href="https://t.me/luwengtechsupport" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechsupport</a></li>
+            </ul>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>© 2026 <strong>Luweng Studios</strong>. Seluruh hak cipta dilindungi undang-undang.</p>
+            <p style="margin-top: 6px; font-size: 12px; color: #64748b;">
+                CATET: Financial & Mobility Intelligence • Standar Privasi Terbuka & Independen
+            </p>
+        </div>
+    </div>
+</body>
+</html>
