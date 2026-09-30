@@ -1,46 +1,43 @@
-# Kebijakan Privasi (Privacy Policy) — CATET
+# Privacy Policy — CATET
 
-**Terakhir Diperbarui: September 2026** • **Organisasi: LuwengGroup**
+**Last Updated: September 2026** • **Organization: LuwengGroup**
 
-**LuwengGroup** ("Kami") berkomitmen penuh untuk melindungi dan menghormati hak privasi Anda. Dokumen Kebijakan Privasi ini menerangkan standar tata kelola dan perlindungan informasi pada aplikasi **CATET: Financial & Mobility Intelligence System** (`com.luwengstudios.catet`).
-
----
-
-### 1. Prinsip Dasar: Privacy-by-Design & Zero-Knowledge Architecture
-Aplikasi CATET dibangun dengan prinsip kemandirian data mutlak (*Offline-First*). Seluruh data finansial, pembukuan kas UMKM, riwayat order, catatan servis kendaraan, dan target tabungan Anda disimpan secara lokal pada perangkat Anda dalam basis data internal terenkripsi. 
-
-Kami **tidak pernah mengunggah, menyalin, menganalisis, ataupun menjual** catatan finansial maupun riwayat perjalanan Anda ke server pusat kami atau pihak ketiga mana pun.
+LuwengGroup is fully committed to safeguarding and respecting your personal privacy rights. This document outlines our data protection, encryption, and telematics management standards for the application **CATET: Financial & Mobility Intelligence** (`com.luwengstudios.catet`).
 
 ---
 
-### 2. Autentikasi Wajib Akun Google (Google Identity)
-Untuk menjamin keamanan akun dan integritas sinkronisasi data cloud:
-* **Data Profil Publik Dasar:** Kami menerima identitas profil publik terverifikasi (Nama, Alamat Email terdaftar, UID Firebase, dan Foto Profil) guna mengamankan kepemilikan akun.
-* Kami **tidak pernah memiliki akses atau menyimpan kata sandi akun Google Anda**.
+### 1. Privacy-by-Design & Zero-Knowledge Architecture
+CATET operates on an absolute *Offline-First* foundation. All financial logs, cashflow ledgers, daily trip records, vehicle service journals, and savings goals are stored locally on your device within encrypted storage.
+
+We never upload, copy, analyze, sell, or trade your financial records, location trails, or personal profile data to our central servers or any third-party brokers.
 
 ---
 
-### 3. Informasi yang Diproses & Izin Lokasi Presisi
-Kami hanya meminta izin sistem yang secara mutlak dibutuhkan untuk fungsi aplikasi yang diaktifkan secara sadar oleh pengguna:
-
-* **Izin Lokasi Presisi (GPS Fine & Coarse Location):** Digunakan untuk fitur **Radar BBM** dalam menghitung jarak ke 4 stasiun SPBU Pertamina terdekat di sekitar posisi real-time pengguna, serta **Mode Mengemudi** untuk kalkulasi speedometer dan akumulasi jarak tempuh harian (KM). Koordinat GPS diproses secara real-time di memori kerja perangkat dan tidak disimpan sebagai riwayat pelacakan di server mana pun.
-* **Layanan Latar Belakang (Foreground Service):** Berjalan saat Anda menyalakan *Mode Mengemudi* atau *Widget Speedometer Mengambang* dengan notifikasi tetap di bilah status agar pencatatan jarak tempuh dan konsumsi BBM tetap akurat saat menggunakan navigasi lain.
-* **Pencadangan Mandiri dengan Jetpack WorkManager:** Menggunakan sistem penjadwalan hemat daya Android yang mematuhi pedoman Google Play tanpa memerlukan izin alarm khusus (*SCHEDULE_EXACT_ALARM*).
-* **Storage Access Framework (SAF):** Tidak meminta izin akses penyimpanan luas (*MANAGE_EXTERNAL_STORAGE*). Pengguna bebas memilih folder penyimpanan file cadangan `.ctt` terenkripsi melalui pemilih dokumen resmi Android.
+### 2. Google Identity Authentication
+To authenticate account ownership and secure cloud backup operations:
+* **Verified Public Profile:** We receive basic verified identity attributes (Full Name, Registered Email, Firebase UID, and Profile Picture).
+* We never request, access, or store your Google account password.
 
 ---
 
-### 4. Hak Pengguna & Penghapusan Data (Right to Erasure)
-Sesuai dengan Google Play User Data Policy, standar GDPR, dan UU Pelindungan Data Pribadi (UU PDP No. 27 Tahun 2022):
-* Anda dapat menghapus seluruh data lokal dan histori catatan seketika melalui tombol *Hapus Semua Data* di aplikasi.
-* Anda berhak mengajukan permohonan penghapusan permanen seluruh data profil akun cloud kami dengan menghubungi tim privasi kami melalui email **luwengstudio@gmail.com** atau saluran Telegram resmi.
+### 3. Location Permissions & GNSS Doppler Speedometer
+We strictly request essential device permissions activated intentionally by the user:
+* **Precise GPS Location (Fine & Coarse):** Utilized for the **Fuel Radar** utility to calculate direct proximity to official Pertamina fuel stations, and **Driving Mode** to calculate instantaneous GNSS Doppler speed and accumulated distance (KM). Coordinates are processed in volatile device memory and are never persisted as tracking history on any remote server.
+* **Foreground Service with Persistent Notification:** Runs when *Driving Mode* or the *Floating Speedometer Widget* is active to ensure continuous metric calculation while using navigation apps. Terminates immediately via the notification "Stop" action.
+* **Google Drive AppData Silent Backup:** Automated cloud backups store AES-256-GCM encrypted `.ctt` archives directly into your personal Google Drive hidden partition (`appDataFolder`). LuwengGroup has zero access to your Google Drive content.
 
 ---
 
-### 5. Hubungi Kami
-Untuk pertanyaan hukum, permohonan penghapusan data, atau dukungan teknis resmi:
-* **Organisasi:** LuwengGroup
+### 4. User Rights & Data Deletion
+In accordance with Google Play Developer Policy 2026, GDPR (Article 17), and Indonesian UU PDP No. 27/2022:
+* Instant local data wipe via the *Reset All Data* menu inside CATET.
+* Permanent cloud account erasure requests by contacting **luwengstudio@gmail.com** or our official Telegram desk.
+
+---
+
+### 5. Official Contacts
+* **Organization:** LuwengGroup
 * **Lead Developer:** Darmawan Aditya (KepalaLuweng)
-* **Email Resmi:** luwengstudio@gmail.com
-* **Telegram Dukungan Resmi:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
-* **Channel Pembaruan:** [t.me/luwengtechsupport](https://t.me/luwengtechsupport)
+* **Official Email:** luwengstudio@gmail.com
+* **Official Telegram Support:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
+* **Official Updates Channel:** [t.me/luwengtechsupport](https://t.me/luwengtechsupport)

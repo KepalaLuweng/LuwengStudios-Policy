@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kebijakan Privasi (Privacy Policy) — CATET | LuwengGroup</title>
+    <title>Privacy Policy — CATET | LuwengGroup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -40,6 +40,15 @@
             margin: 0 auto;
         }
 
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
         .brand-badge {
             display: inline-flex;
             align-items: center;
@@ -53,7 +62,33 @@
             font-weight: 700;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .lang-btn {
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            padding: 6px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-emerald);
+            color: #041f14;
+            font-weight: 700;
         }
 
         .header-card {
@@ -184,6 +219,14 @@
             color: #d1fae5;
         }
 
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
         .footer {
             text-align: center;
             font-size: 13px;
@@ -216,151 +259,400 @@
             .policy-card {
                 padding: 20px 16px;
             }
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- BRAND BADGE -->
-        <div class="brand-badge">
-            <span class="meta-dot"></span> LuwengGroup Global Privacy Standard
-        </div>
-
-        <!-- HEADER HERO -->
-        <div class="header-card">
-            <h1>Kebijakan Privasi (Privacy Policy)</h1>
-            <p style="font-size: 15px; color: #94a3b8;">
-                Komitmen perlindungan data dan privasi pengguna aplikasi <strong>CATET: Financial & Mobility Intelligence</strong> oleh <strong>LuwengGroup</strong>.
-            </p>
-            <div class="meta-info">
-                <div class="meta-item">
-                    <span>Aplikasi:</span> <strong style="color: #f8fafc;">CATET (com.luwengstudios.catet)</strong>
-                </div>
-                <div class="meta-item">
-                    <span>Organisasi:</span> <strong style="color: #f8fafc;">LuwengGroup</strong>
-                </div>
-                <div class="meta-item">
-                    <span>Standar Kepatuhan:</span> <strong style="color: #10b981;">Google Play Policy 2026 & UU PDP</strong>
-                </div>
-                <div class="meta-item">
-                    <span>Pembaruan:</span> <strong style="color: #cbd5e1;">September 2026</strong>
-                </div>
+        <div class="top-bar">
+            <div class="brand-badge">
+                <span class="meta-dot"></span> LuwengGroup Global Privacy Standard
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-id" onclick="setLanguage('id')">Bahasa Indonesia</button>
+                <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">English</button>
+                <button class="lang-btn" id="btn-ms" onclick="setLanguage('ms')">Bahasa Melayu</button>
             </div>
         </div>
 
-        <!-- SECTION 1 -->
-        <div class="policy-card">
-            <h2><span class="section-num">1</span> Prinsip Dasar & Komitmen LuwengGroup</h2>
-            <p>
-                <strong>LuwengGroup</strong> ("Kami") menghormati hak privasi dan perlindungan data pribadi Anda sepenuhnya. Aplikasi <strong>CATET</strong> dibangun dengan landasan arsitektur <em>Privacy-by-Design</em> dan <em>Zero-Knowledge Local Encryption</em>. Kami memastikan bahwa catatan keuangan, kalkulasi kas usaha, histori order harian, dan data operasional Anda berada di bawah kendali penuh Anda sendiri.
-            </p>
-            <div class="highlight-box">
-                <strong>Jaminan Bebas Komersialisasi Data:</strong> LuwengGroup tidak pernah dan tidak akan pernah menjual, menyewakan, membagikan, atau memperdagangkan data pribadi, catatan finansial, maupun koordinat lokasi Anda kepada pengiklan, pialang data, atau pihak ketiga mana pun.
+        <div id="content-id" class="lang-content active">
+            <div class="header-card">
+                <h1>Kebijakan Privasi (Privacy Policy)</h1>
+                <p style="font-size: 15px; color: #94a3b8;">
+                    Komitmen perlindungan data dan privasi pengguna aplikasi <strong>CATET: Financial & Mobility Intelligence</strong> oleh <strong>LuwengGroup</strong>.
+                </p>
+                <div class="meta-info">
+                    <div class="meta-item"><span>Aplikasi:</span> <strong style="color: #f8fafc;">CATET (com.luwengstudios.catet)</strong></div>
+                    <div class="meta-item"><span>Organisasi:</span> <strong style="color: #f8fafc;">LuwengGroup</strong></div>
+                    <div class="meta-item"><span>Standar Kepatuhan:</span> <strong style="color: #10b981;">Google Play Policy 2026 & UU PDP</strong></div>
+                    <div class="meta-item"><span>Pembaruan:</span> <strong style="color: #cbd5e1;">September 2026</strong></div>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">1</span> Prinsip Dasar & Komitmen LuwengGroup</h2>
+                <p>
+                    <strong>LuwengGroup</strong> menghormati hak privasi dan perlindungan data pribadi Anda sepenuhnya. Aplikasi <strong>CATET</strong> dibangun dengan landasan arsitektur <em>Privacy-by-Design</em> dan <em>Offline-First Local Storage</em>. Kami memastikan bahwa catatan keuangan, kalkulasi kas usaha, histori perjalanan harian, dan data operasional Anda berada di bawah kendali penuh Anda sendiri di penyimpanan lokal perangkat.
+                </p>
+                <div class="highlight-box">
+                    <strong>Jaminan Bebas Komersialisasi Data:</strong> LuwengGroup tidak pernah dan tidak akan pernah menjual, menyewakan, membagikan, atau memperdagangkan data pribadi, catatan finansial, maupun koordinat lokasi Anda kepada pengiklan, pialang data, atau pihak ketiga mana pun.
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">2</span> Autentikasi Akun Google (Google Identity)</h2>
+                <p>
+                    Untuk memverifikasi kepemilikan akun dan menyediakan sinkronisasi pencadangan cloud yang aman, CATET menggunakan <strong>Google Identity & Firebase Authentication</strong>:
+                </p>
+                <ul>
+                    <li><strong>Data yang Diproses:</strong> Kami hanya menerima data profil publik dasar terverifikasi, meliputi Nama Lengkap, Alamat Email terdaftar, ID Pengguna Unik (UID), dan Foto Profil.</li>
+                    <li><strong>Tujuan Pemrosesan:</strong> Untuk otentikasi identitas, perlindungan dari akses tanpa izin, dan verifikasi kepemilikan cadangan data. Kami <strong>tidak pernah meminta, melihat, atau menyimpan kata sandi akun Google Anda</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">3</span> Penggunaan Data Lokasi & Telematika GPS</h2>
+                <p>
+                    Aplikasi CATET meminta izin lokasi presisi (<code>ACCESS_FINE_LOCATION</code> dan <code>ACCESS_COARSE_LOCATION</code>) secara transparan untuk utilitas utama yang diminta secara sadar oleh pengguna:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Radar BBM (Pencarian SPBU Terdekat):</strong> Koordinat GPS perangkat digunakan secara real-time untuk menghitung jarak langsung ke stasiun SPBU Pertamina terdekat di sekitar posisi pengguna dan menampilkan panduan rute navigasi. Koordinat ini diproses secara lokal di memori kerja dan <strong>tidak disimpan</strong> sebagai jejak lokasi di server mana pun.
+                    </li>
+                    <li>
+                        <strong>Mode Mengemudi & Telematika Kecepatan:</strong> Menggunakan sensor Doppler GNSS perangkat untuk menampilkan kecepatan real-time (Speedometer) dan menghitung akumulasi jarak tempuh harian (KM) guna menentukan efisiensi konsumsi bahan bakar (KM/Liter) serta pengingat servis kendaraan berkala.
+                    </li>
+                </ul>
+                <p>
+                    CATET tidak melakukan pelacakan lokasi di latar belakang ketika fitur mengemudi atau radar BBM tidak aktif.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">4</span> Layanan Latar Belakang (Foreground Service & WorkManager)</h2>
+                <p>Aplikasi mematuhi standar konsumsi daya baterai dan kebijakan Google Play Android modern:</p>
+                <ul>
+                    <li>
+                        <strong>Foreground Service dengan Notifikasi Aktif:</strong> Saat Anda mengaktifkan <em>Mode Mengemudi</em> atau <em>Widget Floating Speedometer</em>, sistem menjalankan layanan latar depan dengan notifikasi tetap di bilah status agar Anda dapat memantau jarak tempuh secara akurat saat menggunakan navigasi lain. Layanan dapat Anda hentikan seketika melalui tombol "Hentikan" di notifikasi.
+                    </li>
+                    <li>
+                        <strong>Pencadangan Terjadwal dengan Jetpack WorkManager:</strong> Fitur cadangan otomatis menggunakan Android Jetpack WorkManager yang hemat daya dan mematuhi aturan pembatasan sistem tanpa memerlukan izin alarm khusus.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">5</span> Pencadangan Google Drive AppData & Enkripsi</h2>
+                <p>
+                    Aplikasi CATET mengimplementasikan standar keamanan pencadangan cloud mutakhir:
+                </p>
+                <ul>
+                    <li><strong>Google Drive AppData Folder:</strong> Pencadangan cloud dilakukan langsung ke partisi tersembunyi khusus aplikasi (<code>appDataFolder</code>) di akun Google Drive pribadi pengguna. Pengembang LuwengGroup tidak memiliki akses untuk melihat, membaca, atau mengelola isi Google Drive pengguna di luar berkas cadangan aplikasi CATET.</li>
+                    <li><strong>Enkripsi Tingkat Militer (AES-256-GCM):</strong> Seluruh berkas cadangan (<code>.ctt</code>) dikompresi dengan GZIP dan dienkripsi secara lokal di memori perangkat menggunakan standar AES-256-GCM sebelum diunggah ke Google Drive.</li>
+                    <li><strong>Kepatuhan Scoped Storage:</strong> CATET tidak meminta izin akses penyimpanan luas (<em>MANAGE_EXTERNAL_STORAGE</em>). Ekspor manual berkas cadangan dilakukan melalui Storage Access Framework (SAF) resmi Android.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">6</span> Hak Pengguna & Penghapusan Data (Data Deletion)</h2>
+                <p>
+                    Sesuai dengan regulasi Google Play Developer Policy, GDPR (Pasal 17), dan UU PDP No. 27/2022 Indonesia, Anda memiliki hak penuh atas data Anda:
+                </p>
+                <ul>
+                    <li><strong>Penghapusan Mandiri di Aplikasi:</strong> Anda dapat menghapus seluruh transaksi, riwayat perjalanan, dan data lokal seketika melalui menu <em>Reset Semua Data</em> di dalam aplikasi CATET.</li>
+                    <li><strong>Permohonan Penghapusan Akun Permanen:</strong> Anda dapat mengajukan permohonan penghapusan total seluruh data profil akun dengan menghubungi tim privasi kami melalui email <strong>luwengstudio@gmail.com</strong> atau Telegram resmi. Permohonan akan diproses dalam waktu maksimal 3x24 jam kerja.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">7</span> Penyedia Layanan Pihak Ketiga</h2>
+                <p>Kami hanya bekerja sama dengan penyedia infrastruktur tepercaya yang memenuhi standar keamanan global:</p>
+                <ul>
+                    <li><strong>Google Play Services:</strong> Penyediaan Fused Location Provider berakurasi tinggi dan Google Drive API.</li>
+                    <li><strong>Google Firebase:</strong> Otentikasi identitas login aman (<a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent-cyan);">Google Privacy Policy</a>).</li>
+                    <li><strong>OpenStreetMap (OSM) & API Bensin:</strong> Sumber data terbuka stasiun pengisian bahan bakar umum dan harga resmi nasional.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">8</span> Hubungi Kami & Dukungan Resmi</h2>
+                <p>Untuk pertanyaan hukum, permohonan penghapusan data, atau informasi tata kelola privasi:</p>
+                <ul>
+                    <li><strong>Organisasi:</strong> LuwengGroup</li>
+                    <li><strong>Lead Developer:</strong> Darmawan Aditya (KepalaLuweng)</li>
+                    <li><strong>Email Resmi:</strong> <a href="mailto:luwengstudio@gmail.com" style="color: var(--accent-cyan);">luwengstudio@gmail.com</a></li>
+                    <li><strong>Dukungan Telegram Resmi:</strong> <a href="https://t.me/luwengtechofficial" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechofficial</a></li>
+                    <li><strong>Channel Informasi:</strong> <a href="https://t.me/luwengtechsupport" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechsupport</a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- SECTION 2 -->
-        <div class="policy-card">
-            <h2><span class="section-num">2</span> Autentikasi Wajib Akun Google (Google Identity)</h2>
-            <p>
-                Untuk menjamin keamanan kepemilikan akun, perlindungan data, dan integritas pencadangan cloud, aplikasi CATET mewajibkan autentikasi akun resmi melalui <strong>Google Identity & Firebase Authentication</strong>:
-            </p>
-            <ul>
-                <li><strong>Data yang Diproses:</strong> Kami hanya menerima data profil publik dasar terverifikasi, meliputi Nama Lengkap, Alamat Email terdaftar, ID Pengguna Unik (UID), dan Foto Profil.</li>
-                <li><strong>Tujuan Pemrosesan:</strong> Untuk otentikasi identitas, perlindungan dari akses tanpa izin, dan verifikasi kepemilikan cadangan data. Kami <strong>tidak pernah meminta, melihat, atau menyimpan kata sandi akun Google Anda</strong>.</li>
-            </ul>
+        <div id="content-en" class="lang-content">
+            <div class="header-card">
+                <h1>Privacy Policy</h1>
+                <p style="font-size: 15px; color: #94a3b8;">
+                    Data protection and user privacy commitments for <strong>CATET: Financial & Mobility Intelligence</strong> by <strong>LuwengGroup</strong>.
+                </p>
+                <div class="meta-info">
+                    <div class="meta-item"><span>Application:</span> <strong style="color: #f8fafc;">CATET (com.luwengstudios.catet)</strong></div>
+                    <div class="meta-item"><span>Organization:</span> <strong style="color: #f8fafc;">LuwengGroup</strong></div>
+                    <div class="meta-item"><span>Compliance:</span> <strong style="color: #10b981;">Google Play Policy 2026 & GDPR</strong></div>
+                    <div class="meta-item"><span>Updated:</span> <strong style="color: #cbd5e1;">September 2026</strong></div>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">1</span> Core Principles & LuwengGroup Commitment</h2>
+                <p>
+                    <strong>LuwengGroup</strong> fully respects your privacy and personal data protection rights. The <strong>CATET</strong> application is built on the foundations of <em>Privacy-by-Design</em> and <em>Offline-First Local Storage</em>. We ensure that your financial logs, business cashflow calculations, daily trip histories, and operational data remain strictly under your own control on your local device storage.
+                </p>
+                <div class="highlight-box">
+                    <strong>Zero Data Commercialization Guarantee:</strong> LuwengGroup has never and will never sell, lease, share, or trade your personal data, financial records, or location coordinates with advertisers, data brokers, or any third parties.
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">2</span> Google Identity Authentication</h2>
+                <p>
+                    To verify account ownership and provide seamless, secure cloud backups, CATET utilizes <strong>Google Identity & Firebase Authentication</strong>:
+                </p>
+                <ul>
+                    <li><strong>Processed Data:</strong> We only receive verified basic public profile information, including Full Name, Registered Email Address, Unique User ID (UID), and Profile Photo.</li>
+                    <li><strong>Processing Purpose:</strong> Used for identity verification, unauthorized access prevention, and backup ownership validation. We <strong>never request, access, or store your Google account password</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">3</span> Location Data & GPS Telematics</h2>
+                <p>
+                    The CATET application transparently requests precise location permissions (<code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code>) strictly for core utilities consciously triggered by the user:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Fuel Radar (Nearest Gas Stations):</strong> Device GPS coordinates are used in real-time to compute distance to nearby official Pertamina gas stations and provide route guidance. Coordinates are processed locally in volatile memory and are <strong>never stored</strong> as location trails on any server.
+                    </li>
+                    <li>
+                        <strong>Driving Mode & Speedometer Telematics:</strong> Utilizes device GNSS Doppler velocity to deliver instantaneous real-time speed measurements and calculate accumulated daily trip distance (KM) for fuel efficiency tracking (KM/Liter) and routine vehicle maintenance alerts.
+                    </li>
+                </ul>
+                <p>
+                    CATET never performs background location tracking when driving mode or fuel radar features are inactive.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">4</span> Background Services & WorkManager</h2>
+                <p>The application complies with Android power management and modern Google Play background execution policies:</p>
+                <ul>
+                    <li>
+                        <strong>Foreground Service with Persistent Notification:</strong> While <em>Driving Mode</em> or the <em>Floating Speedometer Widget</em> is active, the system runs a foreground service with a persistent notification in the status bar so you can accurately monitor distance and speed while using external navigation apps. You can terminate the service at any moment via the "Stop" action button.
+                    </li>
+                    <li>
+                        <strong>Scheduled Backups via Jetpack WorkManager:</strong> Automatic backup tasks utilize battery-optimized Android Jetpack WorkManager, adhering to system constraints without requiring aggressive exact alarm permissions.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">5</span> Google Drive AppData Cloud Backup & Encryption</h2>
+                <p>
+                    CATET implements state-of-the-art cloud backup security standards:
+                </p>
+                <ul>
+                    <li><strong>Google Drive AppData Folder:</strong> Automated cloud backups are stored directly inside a private, hidden application partition (<code>appDataFolder</code>) within the user's personal Google Drive account. LuwengGroup developers have zero access to view, inspect, or manage any of your personal Google Drive content outside of CATET's dedicated backup file.</li>
+                    <li><strong>Military-Grade Encryption (AES-256-GCM):</strong> All backup files (<code>.ctt</code>) are compressed with GZIP and locally encrypted in device memory using AES-256-GCM prior to transmission.</li>
+                    <li><strong>Scoped Storage Compliance:</strong> CATET does not request broad external storage access (<em>MANAGE_EXTERNAL_STORAGE</em>). Manual file exports operate via Android's official Storage Access Framework (SAF).</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">6</span> User Rights & Data Deletion</h2>
+                <p>
+                    In accordance with Google Play Developer Policy, GDPR (Article 17 Right to Erasure), and global data protection regulations:
+                </p>
+                <ul>
+                    <li><strong>In-App Immediate Deletion:</strong> You can wipe all transaction records, trip histories, and local data instantly through the <em>Reset All Data</em> option in the CATET settings menu.</li>
+                    <li><strong>Account Erasure Requests:</strong> You may request permanent deletion of your profile identity from our systems by contacting our privacy desk at <strong>luwengstudio@gmail.com</strong> or via our official Telegram channel. Requests are processed within 3 business days.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">7</span> Third-Party Service Providers</h2>
+                <p>We only collaborate with trusted infrastructure partners compliant with international security standards:</p>
+                <ul>
+                    <li><strong>Google Play Services:</strong> High-precision Fused Location Provider and Google Drive API services.</li>
+                    <li><strong>Google Firebase:</strong> Secure authentication gateway (<a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent-cyan);">Google Privacy Policy</a>).</li>
+                    <li><strong>OpenStreetMap (OSM) & Fuel APIs:</strong> Public directory datasets for gas station coordinates and official fuel pricing.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">8</span> Contact Us & Official Support</h2>
+                <p>For legal inquiries, data deletion requests, or privacy governance details:</p>
+                <ul>
+                    <li><strong>Organization:</strong> LuwengGroup</li>
+                    <li><strong>Lead Developer:</strong> Darmawan Aditya (KepalaLuweng)</li>
+                    <li><strong>Official Email:</strong> <a href="mailto:luwengstudio@gmail.com" style="color: var(--accent-cyan);">luwengstudio@gmail.com</a></li>
+                    <li><strong>Official Telegram Support:</strong> <a href="https://t.me/luwengtechofficial" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechofficial</a></li>
+                    <li><strong>Information Channel:</strong> <a href="https://t.me/luwengtechsupport" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechsupport</a></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- SECTION 3 -->
-        <div class="policy-card">
-            <h2><span class="section-num">3</span> Penggunaan Data Lokasi (Prominent Location Disclosure)</h2>
-            <p>
-                Aplikasi CATET meminta izin lokasi presisi (<code>ACCESS_FINE_LOCATION</code> dan <code>ACCESS_COARSE_LOCATION</code>) secara transparan untuk dua fungsi utilitas utama yang diminta secara sadar oleh pengguna:
-            </p>
-            <ul>
-                <li>
-                    <strong>Radar BBM (Pencarian SPBU Terdekat):</strong> Koordinat GPS perangkat digunakan secara real-time untuk menghitung jarak langsung ke 4 stasiun SPBU Pertamina terdekat di sekitar posisi pengguna dan menampilkan panduan rute navigasi. Koordinat ini diproses secara lokal di memori kerja dan <strong>tidak disimpan</strong> sebagai jejak lokasi di server mana pun.
-                </li>
-                <li>
-                    <strong>Mode Mengemudi & Telematika Kecepatan:</strong> Digunakan untuk menampilkan speedometer langsung dan menghitung akumulasi jarak perjalanan harian (KM) guna menentukan efisiensi konsumsi bahan bakar (Km/Liter) dan pengingat servis kendaraan.
-                </li>
-            </ul>
-            <p>
-                CATET tidak melakukan pelacakan lokasi di latar belakang (<em>background location tracking</em>) ketika fitur mengemudi atau radar tidak aktif.
-            </p>
+        <div id="content-ms" class="lang-content">
+            <div class="header-card">
+                <h1>Dasar Privasi (Privacy Policy)</h1>
+                <p style="font-size: 15px; color: #94a3b8;">
+                    Komitmen perlindungan data dan privasi pengguna aplikasi <strong>CATET: Financial & Mobility Intelligence</strong> oleh <strong>LuwengGroup</strong>.
+                </p>
+                <div class="meta-info">
+                    <div class="meta-item"><span>Aplikasi:</span> <strong style="color: #f8fafc;">CATET (com.luwengstudios.catet)</strong></div>
+                    <div class="meta-item"><span>Organisasi:</span> <strong style="color: #f8fafc;">LuwengGroup</strong></div>
+                    <div class="meta-item"><span>Pematuhan:</span> <strong style="color: #10b981;">Google Play Policy 2026 & PDPA 2010</strong></div>
+                    <div class="meta-item"><span>Dikemas Kini:</span> <strong style="color: #cbd5e1;">September 2026</strong></div>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">1</span> Prinsip Teras & Komitmen LuwengGroup</h2>
+                <p>
+                    <strong>LuwengGroup</strong> menghormati sepenuhnya hak privasi dan perlindungan data peribadi anda. Aplikasi <strong>CATET</strong> dibina berteraskan arsitektur <em>Privacy-by-Design</em> dan <em>Offline-First Local Storage</em>. Kami memastikan rekod kewangan, pengiraan aliran tunai perniagaan, sejarah perjalanan harian, dan data operasi kekal di bawah kawalan mutlak anda pada storan peranti tempatan.
+                </p>
+                <div class="highlight-box">
+                    <strong>Jaminan Sifar Pengkomersialan Data:</strong> LuwengGroup tidak pernah dan tidak akan sekali-kali menjual, memajak, berkongsi, atau memperdagangkan data peribadi, rekod kewangan, atau koordinat lokasi anda kepada pengiklan, broker data, atau mana-mana pihak ketiga.
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">2</span> Pengesahan Akaun Google (Google Identity)</h2>
+                <p>
+                    Bagi mengesahkan pemilikan akaun dan menyediakan sandaran awan yang selamat, CATET menggunakan <strong>Google Identity & Firebase Authentication</strong>:
+                </p>
+                <ul>
+                    <li><strong>Data yang Diproses:</strong> Kami hanya menerima data profil awam asas yang disahkan, merangkumi Nama Penuh, Alamat Emel berdaftar, ID Pengguna Unik (UID), dan Foto Profil.</li>
+                    <li><strong>Tujuan Pemprosesan:</strong> Untuk pengesahan identiti, pencegahan capaian tanpa kebenaran, dan pengesahan pemilikan data sandaran. Kami <strong>tidak pernah meminta, melihat, atau menyimpan kata laluan akaun Google anda</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">3</span> Data Lokasi & Telematik GPS</h2>
+                <p>
+                    Aplikasi CATET meminta kebenaran lokasi tepat (<code>ACCESS_FINE_LOCATION</code> dan <code>ACCESS_COARSE_LOCATION</code>) secara telus hanya untuk utiliti utama yang diaktifkan secara sedar oleh pengguna:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Radar Bahan Api (Stesen Minyak Terdekat):</strong> Koordinat GPS peranti digunakan secara masa nyata bagi mengira jarak ke stesen minyak Pertamina terdekat di sekitar pengguna dan memberikan panduan navigasi. Koordinat ini diproses secara setempat dalam memori kerja dan <strong>tidak disimpan</strong> sebagai jejak lokasi pada mana-mana pelayan.
+                    </li>
+                    <li>
+                        <strong>Mod Pemanduan & Telematik Kelajuan:</strong> Menggunakan sensor Doppler GNSS peranti untuk memaparkan kelajuan masa nyata (Speedometer) dan mengira akumulasi jarak perjalanan harian (KM) bagi pemantauan kecekapan bahan api (KM/Liter) serta peringatan servis kenderaan berkala.
+                    </li>
+                </ul>
+                <p>
+                    CATET tidak melakukan penjejakan lokasi di latar belakang apabila fungsi pemanduan atau radar bahan api dimatikan.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">4</span> Perkhidmatan Latar Belakang (Foreground Service & WorkManager)</h2>
+                <p>Aplikasi mematuhi garis panduan pengurusan kuasa bateri dan dasar latar belakang Google Play Android moden:</p>
+                <ul>
+                    <li>
+                        <strong>Foreground Service dengan Pemberitahuan Kekal:</strong> Semasa <em>Mod Memandu</em> atau <em>Widget Speedometer Terapung</em> aktif, sistem menjalankan perkhidmatan latar depan dengan notifikasi tetap pada bar status supaya anda dapat memantau jarak dan kelajuan semasa menggunakan aplikasi navigasi lain. Perkhidmatan boleh dihentikan serta-merta melalui butang "Berhenti" pada notifikasi.
+                    </li>
+                    <li>
+                        <strong>Sandaran Berjadual dengan Jetpack WorkManager:</strong> Ciri sandaran automatik memanfaatkan Android Jetpack WorkManager yang cekap tenaga mengikut kekangan sistem tanpa memerlukan kebenaran penggera khas.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">5</span> Sandaran Google Drive AppData & Enkripsi</h2>
+                <p>
+                    CATET melaksanakan piawaian keselamatan sandaran awan bertaraf tinggi:
+                </p>
+                <ul>
+                    <li><strong>Google Drive AppData Folder:</strong> Sandaran awan disimpan terus ke partisi tersembunyi khusus aplikasi (<code>appDataFolder</code>) dalam akaun Google Drive peribadi pengguna. Pembangun LuwengGroup tidak mempunyai akses untuk melihat, memeriksa, atau mengurus kandungan Google Drive pengguna selain daripada fail sandaran CATET.</li>
+                    <li><strong>Enkripsi Piawaian Ketenteraan (AES-256-GCM):</strong> Semua fail sandaran (<code>.ctt</code>) dimampatkan dengan GZIP dan dienkripsi secara setempat di memori peranti menggunakan AES-256-GCM sebelum dihantar ke Google Drive.</li>
+                    <li><strong>Pematuhan Scoped Storage:</strong> CATET tidak meminta kebenaran capaian storan luas (<em>MANAGE_EXTERNAL_STORAGE</em>). Eksport manual beroperasi melalui Storage Access Framework (SAF) rasmi Android.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">6</span> Hak Pengguna & Pemadaman Data</h2>
+                <p>
+                    Selaras dengan Dasar Pembangun Google Play dan piawaian PDPA 2010:
+                </p>
+                <ul>
+                    <li><strong>Pemadaman Serta-Merta dalam Aplikasi:</strong> Anda boleh memadamkan semua rekod transaksi, sejarah perjalanan, dan data setempat melalui pilihan <em>Set Semula Semua Data</em> dalam menu tetapan CATET.</li>
+                    <li><strong>Permohonan Pemadaman Akaun Kekal:</strong> Anda berhak memohon pemadaman menyeluruh identiti profil anda daripada sistem kami dengan menghubungi meja privasi kami melalui emel <strong>luwengstudio@gmail.com</strong> atau saluran Telegram rasmi. Permohonan diproses dalam tempoh 3 hari bekerja.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">7</span> Pembekal Perkhidmatan Pihak Ketiga</h2>
+                <p>Kami hanya bekerjasama dengan rakan infrastruktur dipercayai yang mematuhi standard keselamatan antarabangsa:</p>
+                <ul>
+                    <li><strong>Google Play Services:</strong> Pembekal Fused Location Provider berketepatan tinggi dan perkhidmatan Google Drive API.</li>
+                    <li><strong>Google Firebase:</strong> Gerbang pengesahan identiti log masuk yang selamat (<a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent-cyan);">Google Privacy Policy</a>).</li>
+                    <li><strong>OpenStreetMap (OSM) & API Bahan Api:</strong> Set data awam koordinat stesen minyak dan harga rasmi nasional.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><span class="section-num">8</span> Hubungi Kami & Sokongan Rasmi</h2>
+                <p>Untuk sebarang pertanyaan undang-undang, permohonan pemadaman data, atau tadbir urus privasi:</p>
+                <ul>
+                    <li><strong>Organisasi:</strong> LuwengGroup</li>
+                    <li><strong>Lead Developer:</strong> Darmawan Aditya (KepalaLuweng)</li>
+                    <li><strong>Emel Rasmi:</strong> <a href="mailto:luwengstudio@gmail.com" style="color: var(--accent-cyan);">luwengstudio@gmail.com</a></li>
+                    <li><strong>Sokongan Telegram Rasmi:</strong> <a href="https://t.me/luwengtechofficial" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechofficial</a></li>
+                    <li><strong>Saluran Informasi:</strong> <a href="https://t.me/luwengtechsupport" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechsupport</a></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- SECTION 4 -->
-        <div class="policy-card">
-            <h2><span class="section-num">4</span> Layanan Latar Belakang & Jadwal Sistem (WorkManager & Foreground Service)</h2>
-            <p>Aplikasi mematuhi standar konsumsi daya baterai dan kebijakan Google Play Android 14–16:</p>
-            <ul>
-                <li>
-                    <strong>Foreground Service dengan Notifikasi Aktif:</strong> Saat Anda mengaktifkan <em>Mode Mengemudi</em> atau <em>Widget Floating Speedometer</em>, sistem menjalankan layanan latar depan dengan notifikasi tetap di bilah status agar Anda dapat memantau jarak tempuh secara akurat saat menggunakan navigasi lain. Layanan dapat Anda hentikan seketika melalui tombol "Hentikan" di notifikasi.
-                </li>
-                <li>
-                    <strong>Pencadangan Mandiri dengan Jetpack WorkManager:</strong> Fitur cadangan otomatis menggunakan Android Jetpack WorkManager yang hemat daya dan mematuhi aturan pembatasan alarm Google Play tanpa memerlukan izin alarm agresif (<em>SCHEDULE_EXACT_ALARM</em>).
-                </li>
-            </ul>
-        </div>
-
-        <!-- SECTION 5 -->
-        <div class="policy-card">
-            <h2><span class="section-num">5</span> Kepatuhan Scoped Storage & Keamanan Cadangan (SAF)</h2>
-            <p>
-                Sesuai dengan pedoman keamanan Android Scoped Storage:
-            </p>
-            <ul>
-                <li><strong>Storage Access Framework (SAF):</strong> CATET tidak meminta izin akses penyimpanan luas (<em>MANAGE_EXTERNAL_STORAGE</em>). Saat mengekspor file cadangan <code>.ctt</code>, aplikasi memanggil pemilih dokumen resmi Android sehingga Anda bebas menentukan folder penyimpanan pribadi yang Anda percaya (Download, Google Drive, SD Card).</li>
-                <li><strong>Enkripsi Tingkat Lanjut:</strong> Seluruh berkas cadangan dienkripsi menggunakan standar AES-GCM dengan garam pengaman berbasis identitas akun Anda untuk mencegah manipulasi data oleh aplikasi lain.</li>
-            </ul>
-        </div>
-
-        <!-- SECTION 6 -->
-        <div class="policy-card">
-            <h2><span class="section-num">6</span> Hak Pengguna & Prosedur Penghapusan Akun (Data Deletion)</h2>
-            <p>
-                Sesuai dengan regulasi Google Play Developer Policy, GDPR (Pasal 17 - <em>Right to Erasure</em>), dan UU PDP No. 27/2022 Indonesia, Anda memiliki hak penuh atas data Anda:
-            </p>
-            <ul>
-                <li><strong>Penghapusan Mandiri di Aplikasi:</strong> Anda dapat menghapus seluruh transaksi, riwayat perjalanan, dan data lokal secara seketika melalui menu <em>Hapus Semua Data</em> di dalam aplikasi CATET.</li>
-                <li><strong>Permohonan Penghapusan Akun Permanen:</strong> Anda dapat mengajukan permohonan penghapusan total seluruh data profil akun dari basis data cloud kami kapan saja dengan menghubungi tim privasi kami melalui email <strong>luwengstudio@gmail.com</strong> atau Telegram resmi. Permohonan akan diproses dalam waktu maksimal 3x24 jam kerja.</li>
-            </ul>
-        </div>
-
-        <!-- SECTION 7 -->
-        <div class="policy-card">
-            <h2><span class="section-num">7</span> Penyedia Layanan Pihak Ketiga</h2>
-            <p>Kami hanya bekerja sama dengan penyedia infrastruktur tepercaya yang memenuhi standar keamanan global:</p>
-            <ul>
-                <li><strong>Google Play Services:</strong> Untuk penyediaan Fused Location Provider berakurasi tinggi.</li>
-                <li><strong>Google Firebase (Auth & Firestore):</strong> Infrastruktur otentikasi login aman dan basis data tersinkronisasi terenkripsi (<a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent-cyan);">Google Privacy Policy</a>).</li>
-                <li><strong>OpenStreetMap (OSM) / Overpass:</strong> Sumber basis data stasiun pengisian bahan bakar umum terbuka (<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" style="color: var(--accent-cyan);">OSM Privacy Policy</a>).</li>
-            </ul>
-        </div>
-
-        <!-- SECTION 8 -->
-        <div class="policy-card">
-            <h2><span class="section-num">8</span> Hubungi Kami & Dukungan Resmi</h2>
-            <p>
-                Untuk pertanyaan hukum, permohonan penghapusan data, atau informasi tata kelola privasi:
-            </p>
-            <ul>
-                <li><strong>Organisasi:</strong> LuwengGroup</li>
-                <li><strong>Lead Developer:</strong> Darmawan Aditya (KepalaLuweng)</li>
-                <li><strong>Email Resmi:</strong> <a href="mailto:luwengstudio@gmail.com" style="color: var(--accent-cyan);">luwengstudio@gmail.com</a></li>
-                <li><strong>Dukungan Telegram Resmi:</strong> <a href="https://t.me/luwengtechofficial" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechofficial</a></li>
-                <li><strong>Channel Informasi:</strong> <a href="https://t.me/luwengtechsupport" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">t.me/luwengtechsupport</a></li>
-            </ul>
-        </div>
-
-        <!-- FOOTER -->
         <div class="footer">
-            <p>© 2026 <strong>LuwengGroup</strong>. Seluruh hak cipta dilindungi undang-undang.</p>
+            <p>© 2026 <strong>LuwengGroup</strong>. All rights reserved.</p>
             <p style="margin-top: 6px; font-size: 12px; color: #64748b;">
-                CATET: Financial & Mobility Intelligence • Standar Privasi Terbuka, Transparan, & Independen
+                CATET: Financial & Mobility Intelligence • Independent, Transparent, and Secure
             </p>
         </div>
     </div>
+
+    <script>
+        function setLanguage(lang) {
+            var langs = ['id', 'en', 'ms'];
+            if (!langs.includes(lang)) lang = 'id';
+
+            langs.forEach(function(l) {
+                var content = document.getElementById('content-' + l);
+                var btn = document.getElementById('btn-' + l);
+                if (content) content.classList.remove('active');
+                if (btn) btn.classList.remove('active');
+            });
+
+            var activeContent = document.getElementById('content-' + lang);
+            var activeBtn = document.getElementById('btn-' + lang);
+            if (activeContent) activeContent.classList.add('active');
+            if (activeBtn) activeBtn.classList.add('active');
+
+            if (history.replaceState) {
+                var newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?lang=' + lang;
+                window.history.replaceState({ path: newUrl }, '', newUrl);
+            }
+        }
+
+        (function initLang() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var langParam = urlParams.get('lang');
+            var hash = window.location.hash.replace('#', '');
+            var targetLang = langParam || hash || 'id';
+            setLanguage(targetLang);
+        })();
+    </script>
 </body>
 </html>
