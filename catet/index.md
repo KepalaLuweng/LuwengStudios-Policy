@@ -33,14 +33,14 @@ Kami hanya meminta izin sistem yang secara mutlak dibutuhkan untuk fungsi aplika
 ### 4. Hak Pengguna & Penghapusan Data (Right to Erasure)
 Sesuai dengan Google Play User Data Policy, standar GDPR, dan UU Pelindungan Data Pribadi (UU PDP No. 27 Tahun 2022):
 * Anda dapat menghapus seluruh data lokal dan histori catatan seketika melalui tombol *Hapus Semua Data* di aplikasi.
-* Anda berhak mengajukan permohonan penghapusan permanen seluruh data profil akun cloud kami dengan menghubungi tim privasi kami melalui email **admin@luwengtech.com** atau saluran Telegram resmi.
+* Anda berhak mengajukan permohonan penghapusan permanen seluruh data profil akun cloud kami dengan menghubungi tim privasi kami melalui email **luwengstudio@gmail.com** atau saluran Telegram resmi.
 
 ---
 
 ### 5. Hubungi Kami
 Untuk pertanyaan hukum, permohonan penghapusan data, atau dukungan teknis resmi:
-* **Organisasi:** LuwengGroup Engineering
+* **Organisasi:** LuwengGroup
 * **Lead Developer:** Darmawan Aditya (KepalaLuweng)
-* **Email Resmi:** admin@luwengtech.com
+* **Email Resmi:** luwengstudio@gmail.com
 * **Telegram Dukungan Resmi:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
 * **Channel Pembaruan:** [t.me/luwengtechsupport](https://t.me/luwengtechsupport)
