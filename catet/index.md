@@ -1,8 +1,8 @@
 # Privacy Policy — CATET
 
-**Last Updated: September 2026** • **Organization: LuwengGroup**
+**Last Updated: September 2026** • **Organization: LuwengStudio**
 
-LuwengGroup is fully committed to safeguarding and respecting your personal privacy rights. This document outlines our data protection, encryption, and telematics management standards for the application **CATET: Financial & Mobility Intelligence** (`com.luwengstudios.catet`).
+LuwengStudio is fully committed to safeguarding and respecting your personal privacy rights. This document outlines our data protection, encryption, and telematics management standards for the application **CATET: Financial & Mobility Intelligence** (`com.luwengstudios.catet`).
 
 ---
 
@@ -24,7 +24,7 @@ To authenticate account ownership and secure cloud backup operations:
 We strictly request essential device permissions activated intentionally by the user:
 * **Precise GPS Location (Fine & Coarse):** Utilized for the **Fuel Radar** utility to calculate direct proximity to official Pertamina fuel stations, and **Driving Mode** to calculate instantaneous GNSS Doppler speed and accumulated distance (KM). Coordinates are processed in volatile device memory and are never persisted as tracking history on any remote server.
 * **Foreground Service with Persistent Notification:** Runs when *Driving Mode* or the *Floating Speedometer Widget* is active to ensure continuous metric calculation while using navigation apps. Terminates immediately via the notification "Stop" action.
-* **Google Drive AppData Silent Backup:** Automated cloud backups store AES-256-GCM encrypted `.ctt` archives directly into your personal Google Drive hidden partition (`appDataFolder`). LuwengGroup has zero access to your Google Drive content.
+* **Google Drive AppData Silent Backup:** Automated cloud backups store AES-256-GCM encrypted `.ctt` archives directly into your personal Google Drive hidden partition (`appDataFolder`). LuwengStudio has zero access to your Google Drive content.
 
 ---
 
@@ -36,7 +36,7 @@ In accordance with Google Play Developer Policy 2026, GDPR (Article 17), and Ind
 ---
 
 ### 5. Official Contacts
-* **Organization:** LuwengGroup
+* **Organization:** LuwengStudio
 * **Lead Developer:** Darmawan Aditya (KepalaLuweng)
 * **Official Email:** luwengstudio@gmail.com
 * **Official Telegram Support:** [t.me/luwengtechofficial](https://t.me/luwengtechofficial)
